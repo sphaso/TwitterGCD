@@ -14,7 +14,7 @@ defmodule Twittergcd.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :extwitter]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,8 @@ defmodule Twittergcd.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:oauth, github: "tim/erlang-oauth"},
+     {:timex, github: "bitwalker/timex"},
+     {:extwitter, "~> 0.6"}]
   end
 end

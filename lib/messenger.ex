@@ -11,7 +11,7 @@ defmodule Messenger do
     "#{send_to} #{result}"
   end
 
-  def handle_input(send_to, input) do
+  def handle_input({send_to, input}) do
     try do
       numbers = parse input
       gcd = Gcd.gcd(numbers)
