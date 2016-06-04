@@ -28,7 +28,7 @@ defmodule Twittergcd.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:oauth, github: "tim/erlang-oauth"},
-     {:timex, github: "bitwalker/timex"},
+     {:calendar, "~> 0.14.0"},
      {:extwitter, "~> 0.6"}]
   end
 end
