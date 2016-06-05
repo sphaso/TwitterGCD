@@ -17,7 +17,7 @@ defmodule Messenger do
       gcd = Gcd.gcd(numbers)
       output({:ok, send_to, gcd})
     rescue
-      e in ArgumentError -> output({:mistake, send_to, "Invalid input"})
+      _ in ArgumentError -> output({:mistake, send_to, "Invalid input"})
     end
   end
 
