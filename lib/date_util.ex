@@ -10,12 +10,4 @@ defmodule DateUtil do
     now |> Calendar.DateTime.before?(tData)
   end
 
-  def test do
-    Timex.parse("Tue, 05 Mar 2013 23:25:19 +0200", "{RFC2822}")
-  end
-
-  def test2 do
-    Calendar.DateTime.Parse.rfc2822_utc "Sat, 13 Mar 2010 11:23:03 -0800"
-  end
-
 end
